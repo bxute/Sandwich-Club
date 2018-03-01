@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/description_caption_tv"
+        android:padding="8dp"
+        android:textColor="#2d2d2d"
+        android:text="@string/detail_description_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:textSize="16sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="#313131"
+        android:layout_below="@+id/description_caption_tv"
+        android:lineSpacingExtra="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/place_of_origin_caption_tv"
+        android:padding="8dp"
+        android:textColor="#2d2d2d"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/description_tv"
+        android:text="@string/detail_place_of_origin_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/place_of_origin_tv"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/description_tv"
+        android:layout_alignBaseline="@+id/place_of_origin_caption_tv"
+        android:layout_toRightOf="@+id/place_of_origin_caption_tv"
+        android:text="Gandhinagaar"
+        android:textSize="16sp"
+        android:textColor="#313131"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/also_known_as_caption_tv"
+        android:padding="8dp"
+        android:textColor="#2d2d2d"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/place_of_origin_caption_tv"
+        android:text="@string/detail_also_known_as_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.udacity.sandwichclub.AlsoKnowAsView
+        android:id="@+id/alsoKnownAsCv"
+        android:padding="8dp"
+       android:layout_below="@+id/also_known_as_caption_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ingredients_caption_tv"
+        android:padding="8dp"
+        android:textColor="#2d2d2d"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/alsoKnownAsCv"
+        android:text="@string/detail_ingredients_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.udacity.sandwichclub.IngredientView
+        android:layout_below="@+id/ingredients_caption_tv"
+        android:padding="8dp"
+        android:id="@+id/ingredients_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
